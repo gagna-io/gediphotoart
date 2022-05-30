@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './index.css';
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from './AppRoutes';
 import reportWebVitals from './reportWebVitals';
-import StartPage from './Pages/StartPage';
-import ArtworkPage from './Pages/ArtworkPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path='/' exact element={<StartPage />} />
-      <Route path='/artwork' element={<ArtworkPage />} />
-    </Routes>
+    <AppRoutes />
   </BrowserRouter>
 );
 

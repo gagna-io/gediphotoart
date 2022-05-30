@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="734px" height="464px" viewBox="0 0 734 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ELEMENTS-white" transform="translate(8.000000, 4.000000)">
+            <g id="Logo">
+                <g id="Frame" transform="translate(0.000000, 45.000000)" stroke="#FAFAFA" stroke-width="15">
+                    <path d="M203.757986,-9.5071249e-16 L25,0 C11.1928813,2.53632657e-15 -1.69088438e-15,11.1928813 0,25 L0,360 C1.69088438e-15,373.807119 11.1928813,385 25,385 L202.748852,385 L25,385 C11.1928813,385 1.69088438e-15,373.807119 0,360 L0,25 C-1.69088438e-15,11.1928813 11.1928813,2.53632657e-15 25,0 L203.757986,-9.5071249e-16 Z M584.242014,-2.97429154e-15 L693,-3.55271368e-15 C706.807119,-6.08904025e-15 718,11.1928813 718,25 L718,360 C718,373.807119 706.807119,385 693,385 L585.251148,385 L693,385 C706.807119,385 718,373.807119 718,360 L718,25 C718,11.1928813 706.807119,-6.08904025e-15 693,-3.55271368e-15 L584.242014,-2.97429154e-15 Z" id="Combined-Shape"></path>
+                </g>
+                <circle id="Lens-element" stroke="#FAFAFA" stroke-width="8" cx="401" cy="228" r="228"></circle>
+                <g id="G-letter" transform="translate(201.000000, 28.000000)">
+                    <path d="M364.677673,86.4720034 L338.733685,108.81266 C309.051561,63.7451021 257.999451,34 200,34 C108.320732,34 34,108.320732 34,200 C34,291.679268 108.320732,366 200,366 C291.679268,366 366,291.679268 366,200 L400,200 C400,310.45695 310.45695,400 200,400 C89.54305,400 0,310.45695 0,200 C0,89.54305 89.54305,0 200,0 C268.29489,0 328.594653,34.2312063 364.677673,86.4720034 Z" id="Combined-Shape" fill="#FAFAFA" fill-rule="nonzero"></path>
+                    <g id="Group" transform="translate(270.000000, 75.000000)"></g>
+                    <path d="M380,216.25 L270,216.25" id="Line" stroke="#FAFAFA" stroke-width="34" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
