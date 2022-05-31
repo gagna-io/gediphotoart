@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from './AppRoutes';
 import reportWebVitals from './reportWebVitals';
-import AppStyles from './Main.css';
 import Header from './Components/Header/Header';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import AppStyles from './Main.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

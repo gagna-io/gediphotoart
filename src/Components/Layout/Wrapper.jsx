@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
@@ -12,6 +13,10 @@ const Wrapper = ({ children }) => {
       {children}
     </StyledWrapper>
   );
+}
+
+Wrapper.propTypes = {
+  children: PropTypes.node,
 }
 
 export default Wrapper;
