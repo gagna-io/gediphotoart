@@ -1,4 +1,4 @@
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import WhiteLogo from './Logo-white.svg';
@@ -7,11 +7,11 @@ const StyledLogo = styled.img`
   width: 80px;
 `;
 
-const MainLogo = ({ theme }) => {
+const MainLogo: React.FC<{ theme?: string }> = ({ theme }) => {
   return (
     <>
       <Link to='/'>
-        {theme === 'white' && <StyledLogo src={WhiteLogo} />}
+        {!theme || theme === 'white' && <StyledLogo src={WhiteLogo} />}
       </Link>
     </>
   );
