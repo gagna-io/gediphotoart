@@ -45,12 +45,12 @@ const StyledIngress = styled.h3`
 const StartPageHero = () => {
   return (
     <>
-        <StyledHero>
-            <StyledHeroTextContainer>
-                <StyledTitle>Gediphoto ART</StyledTitle>
-                <StyledIngress>Photographic art &amp; inspiration</StyledIngress>
-            </StyledHeroTextContainer>
-        </StyledHero>
+      <StyledHero>
+        <StyledHeroTextContainer>
+          <StyledTitle>Gediphoto ART</StyledTitle>
+          <StyledIngress>Photographic art &amp; inspiration</StyledIngress>
+        </StyledHeroTextContainer>
+      </StyledHero>
     </>
   );
 }

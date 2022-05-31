@@ -5,8 +5,8 @@ import ArtworkPage from './Pages/ArtworkPage';
 const AppRoutes = () => {
   return (
     <Routes>
-        <Route path='/' exact element={<StartPage />} />
-        <Route path='/artworks' element={<ArtworkPage />} />
+      <Route path='/' exact element={<StartPage />} />
+      <Route path='/artworks' element={<ArtworkPage />} />
     </Routes>
   );
 }

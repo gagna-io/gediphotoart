@@ -34,8 +34,8 @@ const Header = () => {
       <StyledHeader>
         <MainLogo theme='white' />
         <StyledMenuItems>
-            <StyledMenuItem to='/'>Start page</StyledMenuItem>
-            <StyledMenuItem to='/artworks'>Artwork</StyledMenuItem>
+          <StyledMenuItem to='/'>Start page</StyledMenuItem>
+          <StyledMenuItem to='/artworks'>Artwork</StyledMenuItem>
         </StyledMenuItems>
       </StyledHeader>
     </Wrapper>  );

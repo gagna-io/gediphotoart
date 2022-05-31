@@ -9,9 +9,9 @@ const StyledLogo = styled.img`
 const MainLogo = ({ theme }) => {
   return (
     <>
-        <Link to='/'>
-            <StyledLogo src={WhiteLogo} />
-        </Link>
+      <Link to='/'>
+        {theme === 'white' && <StyledLogo src={WhiteLogo} />}
+      </Link>
     </>
   );
 }
