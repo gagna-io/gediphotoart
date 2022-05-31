@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import WhiteLogo from './Logo-white.svg';
 
@@ -15,5 +16,9 @@ const MainLogo = ({ theme }) => {
     </>
   );
 }
+
+MainLogo.propTypes = {
+  theme: PropTypes.string
+};
 
 export default MainLogo;
