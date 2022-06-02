@@ -6,10 +6,12 @@ import Picture from '../Picture/Picture';
 import ArrowIcon from '../Icons/ArrowIcon/ArrowIcon';
 
 const StyledArrowIcon = styled(ArrowIcon)`
-    transform: translateX(-10px);
-    transition: .1s;
-    &:hover {
+    @media only screen and (min-device-width: 1025px) {
+      transform: translateX(-10px);
+      transition: .1s;
+      &:hover {
         transform: translateX(0);
+      }
     }
 `;
 
@@ -18,15 +20,19 @@ const StyledCard = styled(Link)`
     flex-direction: column;
     padding: 1em;
     background-color: white;
-    transition: .1s;
     &:hover {
-      transform: scale(1.05);
       z-index: 1;
       cursor: pointer;
       text-decoration: none;
       border: none;
-      ${StyledArrowIcon} {
-        transform: translateX(0);
+    }
+    @media only screen and (min-device-width: 1025px) {
+      transition: .1s;
+      &:hover {
+        transform: scale(1.05);
+        ${StyledArrowIcon} {
+          transform: translateX(0);
+        }
       }
     }
 `;
