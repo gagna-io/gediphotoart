@@ -3,17 +3,23 @@ import styled from "styled-components";
 import PropTypes from 'prop-types';
 
 const StyledMediumHero = styled.div`
-    border: 1px solid red;
-    display: flex;
-    height: 380px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(2,0,36);
+  position: relative;
 `;
-const StyledHeader = styled.h1``;
-const StyledIngress = styled.div``;
+const StyledHeader = styled.h1`
+  margin-bottom: .1em;
+`;
+const StyledIngress = styled.div`
+    border-top: 1px solid white;
+    padding-top: .5em;
+`;
 
-const MediumHero: React.FC<{ title: string, ingress?: React.ReactNode }> = ({ title, ingress }) => {
+const MediumHero: FC<{ title: string, ingress?: ReactNode }> = ({ title, ingress }) => {
   return (
     <StyledMediumHero>
       <StyledHeader>{title}</StyledHeader>

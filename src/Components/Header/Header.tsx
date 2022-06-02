@@ -4,18 +4,17 @@ import MainLogo from "../Icons/MainLogo/MainLogo";
 import Wrapper from "../Layout/Wrapper";
 
 const StyledHeader = styled.header`
+    width: 100%;
+    z-index: 10;
     position: fixed;
+`;
+
+const StyledWrapper = styled(Wrapper)`
+    padding: 1.5em 1em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1400px;
-    z-index: 10;
-    padding: 1em 0em;
-    margin: 0 auto;
-`;
-
-const StyledMenuItems = styled.div`
 `;
 
 const StyledMenuItem = styled(Link)`
@@ -30,15 +29,17 @@ const StyledMenuItem = styled(Link)`
 
 const Header = () => {
   return (
-    <Wrapper>
-      <StyledHeader>
+    <StyledHeader>
+      <StyledWrapper>
         <MainLogo theme='white' />
-        <StyledMenuItems>
+        <div>
           <StyledMenuItem to='/'>Start page</StyledMenuItem>
           <StyledMenuItem to='/artworks'>Artwork</StyledMenuItem>
-        </StyledMenuItems>
-      </StyledHeader>
-    </Wrapper>  );
+        </div>
+      </StyledWrapper>
+    </StyledHeader>
+
+  );
 }
 
 export default Header;

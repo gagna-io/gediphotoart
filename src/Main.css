@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
 /****** TYPOGRAPHY *****/
 /*
 @large:		~"only screen and (min-width: 1050px)";
