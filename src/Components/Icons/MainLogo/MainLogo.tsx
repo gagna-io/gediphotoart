@@ -7,12 +7,18 @@ const StyledLogo = styled.img`
   width: 80px;
 `;
 
+const StyledLink = styled(Link)`
+  &:hover {
+    border-bottom: none;
+  }
+`;
+
 const MainLogo: React.FC<{ theme?: string }> = ({ theme }) => {
   return (
     <>
-      <Link to='/'>
+      <StyledLink to='/'>
         {!theme || theme === 'white' && <StyledLogo src={WhiteLogo} />}
-      </Link>
+      </StyledLink>
     </>
   );
 }
