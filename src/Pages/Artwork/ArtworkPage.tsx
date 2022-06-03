@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import ArtworkCard from "../Components/ArtworkCard/ArtworkCard";
-import Wrapper from "../Components/Layout/Wrapper";
-import MediumHero from "../Components/MediumHero/MediumHero";
+import ArtworkCard from "../../Components/ArtworkCard/ArtworkCard";
+import Wrapper from "../../Components/Layout/Wrapper";
+import MediumHero from "../../Components/MediumHero/MediumHero";
 
 interface IArtwork {
   title: string;
@@ -55,12 +55,12 @@ const ArtworkPage = () => {
         image: 'milky-way'
       },
       {
-        title: 'Archipelago',
-        image: 'archipelago'
-      },
-      {
         title: 'Blue tit',
         image: 'blue-tit'
+      },
+      {
+        title: 'Archipelago',
+        image: 'archipelago'
       },
       {
         title: 'Creek',

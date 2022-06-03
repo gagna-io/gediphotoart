@@ -18,6 +18,10 @@ figure {
 	padding: 0;
 }
 
+img {
+	width: 100%;
+}
+
 /****** TYPOGRAPHY *****/
 /*
 @large:		~"only screen and (min-width: 1050px)";

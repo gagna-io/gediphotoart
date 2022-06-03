@@ -17,20 +17,33 @@ const StyledHeader = styled.header<StyledHeaderProps>`
 `;
 
 const StyledWrapper = styled(Wrapper)`
-    padding: 1em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1em;
+    @media only screen and (min-device-width: 768px) {
+      transform: none;
+    }
+`;
+
+const StyledMainLogo = styled(MainLogo)`
+  width: 60px;
+  @media only screen and (min-device-width: 768px) {
+      width: 80px;
+    }
 `;
 
 const StyledMenuItem = styled(Link)`
   color: #fafafa;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 1em;
   &:last-child {
     margin-right: 0;
+  }
+  @media only screen and (min-device-width: 768px) {
+    font-size: 1.2em;
   }
 `
 
@@ -51,7 +64,7 @@ const Header = () => {
   return (
     <StyledHeader showBackground={isScrolling}>
       <StyledWrapper>
-        <MainLogo theme='white' />
+        <StyledMainLogo theme='white' />
         <div>
           <StyledMenuItem to='/'>Start page</StyledMenuItem>
           <StyledMenuItem to='/artworks'>Artwork</StyledMenuItem>
