@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import ArtworkCard from "../../Components/ArtworkCard/ArtworkCard";
 import Wrapper from "../../Components/Layout/Wrapper";
 import MediumHero from "../../Components/MediumHero/MediumHero";
+import BackendContext from "../../Contexts/BackendContext";
 
 interface IArtwork {
   title: string;
@@ -35,73 +36,11 @@ const StyledGridRow  = styled.div`
 const ArtworkPage = () => {
   const [artwork, setArtwork] = useState<IArtworkResponse>([]);
   const [displayCount, setDisplayCount] = useState(0);
+  const { artworks } = useContext(BackendContext);
 
   useEffect(() => {
-    const backendMock: IArtworkResponse = [
-      {
-        title: 'Velvet',
-        image: 'velvet'
-      },
-      {
-        title: 'Misty lake',
-        image: 'lake-of-fog'
-      },
-      {
-        title: 'In the eye of',
-        image: 'in-the-eye-of-the'
-      },
-      {
-        title: 'Milky way',
-        image: 'milky-way'
-      },
-      {
-        title: 'Blue tit',
-        image: 'blue-tit'
-      },
-      {
-        title: 'Archipelago',
-        image: 'archipelago'
-      },
-      {
-        title: 'Creek',
-        image: 'creek'
-      },
-      {
-        title: 'Flower',
-        image: 'flower'
-      },
-
-      {
-        title: 'Highway',
-        image: 'highway'
-      },
-      {
-        title: 'Lake of fog',
-        image: 'lake-of-fog'
-      },
-      {
-        title: 'Owl',
-        image: 'owl'
-      },
-      {
-        title: 'Stadshagen',
-        image: 'stadshagen'
-      },
-      {
-        title: 'Sunset in the forest',
-        image: 'sunset'
-      },
-      {
-        title: 'Surpriced',
-        image: 'surpriced'
-      },
-      {
-        title: 'Symmetry',
-        image: 'symmetry'
-      }
-    ];
-    setArtwork(backendMock);
-    setDisplayCount(Math.floor(backendMock.length / 3))
+    setArtwork(artworks);
+    setDisplayCount(Math.floor(artworks.length / 3))
   }, []);
 
   return (

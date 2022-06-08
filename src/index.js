@@ -8,6 +8,7 @@ import Header from './Components/Header/Header';
 import AppStyles from './Main.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Header />

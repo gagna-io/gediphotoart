@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Picture from '../Picture/Picture';
 import ArrowIcon from '../Icons/ArrowIcon/ArrowIcon';
+import CartContext from '../../Contexts/CartContext';
 
 const StyledArrowIcon = styled(ArrowIcon)`
     @media only screen and (min-device-width: 1025px) {
@@ -44,9 +45,10 @@ const StyledFooter = styled.div`
     align-items: center;
 `;
 
-const ArtworkCard: FC<{ image: string, title?: string}> = ({ image, title }) => {
+const ArtworkCard: FC<{ image: string, title: string}> = ({ image, title }) => {
+  const { setCart } = useContext(CartContext);
   return (
-    <StyledCard to={`/artwork/${image}`}>
+    <StyledCard onClick={() => setCart({image, title, inCart: ''})} to={`/artwork/${image}`}>
       <Picture image={`${image}-thumb.jpg`} title={title} />
       <StyledFooter>
         {title}
@@ -58,7 +60,7 @@ const ArtworkCard: FC<{ image: string, title?: string}> = ({ image, title }) => 
 
 ArtworkCard.propTypes = {
   image: PropTypes.string.isRequired,
-  title: PropTypes.string
+  title: PropTypes.string.isRequired,
 }
 
 export default ArtworkCard;

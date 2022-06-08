@@ -8,6 +8,9 @@ const StyledPrimaryBytton = styled(Link)`
   padding: 0.5em 1.5em;
   background-color: white;
   font-size: 1.2em;
+  color: #000000;
+  font-weight: strong;
+  border-radius: 4px;
   &:hover {
       opacity: 0.9;
   }

@@ -9,23 +9,31 @@ interface TeaserProps {
 
 const StyledTeaser = styled.div<TeaserProps>`
   display: flex;
-  flex-direction: ${p => p.imageAlignment === 'right' ? 'row' : 'row-reverse'};
+  flex-direction: column-reverse;
   width: 100%;
+  @media only screen and (min-device-width: 768px) {
+    flex-direction: ${p => p.imageAlignment === 'right' ? 'row' : 'row-reverse'};
+  }
 `;
 
 const StyledContent = styled.div`
-  flex-basis: 50%;
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 1em;
+  @media only screen and (min-device-width: 768px) {
+    flex-basis: 50%;
+    width: 50%;
+  }
 `;
+
 const StyledImage = styled.div`
-  flex-basis: 50%;
-  width: 50%;
+  @media only screen and (min-device-width: 768px) {
+    flex-basis: 50%;
+    width: 50%;
+  }
 `;
 
 const Teaser: FC<{imageAlignment?: string, title: string, text?: string, image: string, action?: string, actionText?: string}> = ({imageAlignment = 'right', title, text, image, action, actionText}) => {

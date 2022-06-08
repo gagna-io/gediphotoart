@@ -29,9 +29,12 @@ const StyledHeroTextContainer = styled.div`
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 3.0em;
+	font-size: 2.5em;
   color: #fafafa;
   margin-bottom: 5px;
+	@media only screen and (min-device-width: 768px) {
+    font-size: 3.0em;
+	}
 `
 
 const StyledIngress = styled.h3`
