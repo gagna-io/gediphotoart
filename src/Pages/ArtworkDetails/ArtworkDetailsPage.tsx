@@ -15,8 +15,23 @@ interface ArtworkDetailPageProps {
 }
 
 const StyledContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+      display: block;
+  @media only screen and (min-device-width: 768px) {
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+`;
+
+const StyledArtworkSelector = styled(ArtworkSelector)`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 20vh;
+  @media only screen and (min-device-width: 768px) {
+    position: static;
+  }
 `;
 
 const ArtworkDetailsPage: FC<ArtworkDetailPageProps> = () => {
@@ -36,7 +51,7 @@ const ArtworkDetailsPage: FC<ArtworkDetailPageProps> = () => {
       <Wrapper>
         <StyledContainer>
           <Picture image={`${cart.image}.jpg`} title={cart.title} />
-          <ArtworkSelector />
+          <StyledArtworkSelector />
         </StyledContainer>
       </Wrapper>
     </>
