@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const StyledSlimHero = styled.div`
   display: flex;
-  height: 280px;
+  height: 240px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
